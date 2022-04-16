@@ -4,7 +4,13 @@ import java.util.Date;
 public class Prato {
 	
 	/**Atributos*/
+	/**
+	 * Tipo do Prato
+	 * */
 	private String tipo;
+	/**
+	 * Data do Prato
+	 * */
 	private Date data;
 	
 	/**Métodos Especiais Getters/Setters*/
