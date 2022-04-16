@@ -7,15 +7,21 @@ public class Peso {
 	private Date data;
 	private float valor;
 
-	/**Metodos*/
+	/** 
+     * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados) - Adiciona novo peso
+     */
 	public void adicionarPeso(float valor, Date data) {
 		System.out.print("Valor adicionado com sucesso!");
 	}
 	
+	/** 
+     * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados) - Deleta peso
+     */
 	public void deletarPeso() {
 		System.out.print("Valor deletado com sucesso!");
 	}
 	
+	/**Metodo de busca*/
 	public String visualizar() {
 		return "Peso [data=" + data + ", valor=" + valor + "]";
 	}
