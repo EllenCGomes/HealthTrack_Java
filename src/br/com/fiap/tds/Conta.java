@@ -21,7 +21,9 @@ public class Conta {
 	 * Idioma da Conta escolhido pelo Usuario 
 	 */
 	private String idioma;
-	
+	/** 
+	 * Referencia classe Usuario - Conta nao pode ser criada antes de cadastrar Usuario 
+	 */
 	private Usuario usuario = new Usuario();
 	
 	// Metodos Personalizados
@@ -33,6 +35,72 @@ public class Conta {
 				+ ", usuario=" + usuario + "]";
 	}
 	
+	/** 
+	 * 	METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados - CRUD) - Cria uma nova conta com parametros minimos obrigatorios 
+	 * @param novoEmail Email da conta nova
+	 * @param novaSenha Senha da conta nova
+	 * @param novoUsername Username da conta nova
+	 */
+	public void criarConta(String novoEmail, String novaSenha, String novoUsername) {
+		this.setEmail(novoEmail);
+		this.setSenha(novaSenha);
+		this.setUsername(novoUsername);
+		System.out.print("Sua conta foi criada com sucesso!");
+	}
+	
+	/** 
+	 * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados - CRUD) - Criar uma nova conta ja com idioma setado 
+	 * @param novoEmail Email da conta nova
+	 * @param novaSenha Senha da conta nova
+	 * @param novoUsername Username da conta nova
+	 * @param novoIdioma Idioma escolhido pelo usuario para a conta
+	 */
+	public void criarConta(String novoEmail, String novaSenha, String novoUsername, String novoIdioma) {
+		this.setEmail(novoEmail);
+		this.setSenha(novaSenha);
+		this.setUsername(novoUsername);
+		this.setIdioma(novoIdioma);
+		System.out.print("Sua conta foi criada com sucesso!");
+	}
+	
+	/** 
+	 * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados - CRUD) - Deletar uma conta
+	 */
+	public void deletarConta() {
+		System.out.print("Sua conta foi deletada com sucesso!");
+	}
+	/** 
+	 * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados - CRUD) - Editar Email da conta
+	 * @param updatedEmail Mudanca de email em conta ja existente
+	 */
+	public void editarEmail(String updatedEmail) {
+		this.setEmail(updatedEmail);
+		System.out.print("Novo Email:" + updatedEmail);
+	}
+	/** 
+	 * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados - CRUD) - Editar Username da conta
+	 * @param updatedUsername Mudanca de username em conta ja existente
+	 */
+	public void editarUsername(String updatedUsername) {
+		this.setUsername(updatedUsername);
+		System.out.print("Novo Username:" + updatedUsername);
+	}
+	/** 
+	 * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados - CRUD) - Mudar Idioma da conta
+	 * @param updatedIdioma Mudanca de idioma em conta ja existente
+	 */
+	public void mudarIdioma(String updatedIdioma) {
+		this.setIdioma(updatedIdioma);
+		System.out.print("Novo Idioma:" + updatedIdioma);
+	}
+	/** 
+	 * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados - CRUD) - Trocar senha da conta
+	 * @param updatedSenha Mudanca de senha em conta ja existente
+	 */
+	public void trocarSenha(String updatedSenha) {
+		this.setSenha(updatedSenha);
+		System.out.print("Nova Senha:" + updatedSenha);
+	}
 	// Metodos Especiais - Getters/Setters
 
 	public String getEmail() {
