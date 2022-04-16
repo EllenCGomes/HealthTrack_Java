@@ -6,11 +6,11 @@ public class Exercicio {
 
 	
 	/** Metodo para pesquisar o exercicio */
-	public String toString() {
+	public String visualizar() {
 		return "Exercicio [name=" + name + "]";
 	}
 
-	/** Metodos */
+	/** Metodos Getters/Setters */
 	public String getName() {
 		return name;
 	}
