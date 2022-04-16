@@ -9,7 +9,8 @@ public class Treinamento {
 	private int totalCalorias;
 	
 	
-	/** Metodo para adicionar treino */
+	/** METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados - CRUD) 
+	 * Metodo para adicionar treino */
 	public void adicionarTreinamento () {
 		
 	}
@@ -26,7 +27,8 @@ public class Treinamento {
 		this.intensidade = intensidade;
 	
 	}
-	/** Metodo para deletar o treinamento */
+	/** ** METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados - CRUD) 
+	 * Metodo para deletar o treinamento */
 	public void deletarTreinamento() {
 		System.out.println("Treinamento deletado!");
 		

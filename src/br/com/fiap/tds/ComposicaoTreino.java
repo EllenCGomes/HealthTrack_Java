@@ -6,7 +6,7 @@ public class ComposicaoTreino {
 	Date duracao;
 	Date tempo;
 	
-	/** Metodos */
+	/** Metodos Getters/Setters */
 	public Date getDuracao() {
 		return duracao;
 	}
