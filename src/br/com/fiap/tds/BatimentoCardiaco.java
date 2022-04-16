@@ -9,14 +9,22 @@ public class BatimentoCardiaco {
 	boolean arritmia;
 	
 	/**Metodos*/
-	public void verificaArritmia() {
-		if (arritmia == true) {
-			System.out.print("Alerta de arritmia!");
-		}
+	public void adicionaBatimentoCardiaco(int valor, boolean arritmia, Date data) {
+		System.out.print("Valor adicionado com sucesso!");
+	}
+	
+	public void deletarBatimentoCardiaco() {
+		System.out.print("Valor deletado com sucesso!");
 	}
 	
 	public String visualizar() {
 		return "BatimentoCardiaco [data=" + data + ", valor=" + valor + ", arritmia=" + arritmia + "]";
+	}
+	
+	public void verificarArritmia() {
+		if (arritmia == true) {
+			System.out.print("Alerta de arritmia!");
+		}
 	}
 
 	public Date getData() {
