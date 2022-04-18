@@ -21,10 +21,6 @@ public class Conta {
 	 * Idioma da Conta escolhido pelo Usuario 
 	 */
 	private String idioma;
-	/** 
-	 * Referencia classe Usuario - Conta nao pode ser criada antes de cadastrar Usuario 
-	 */
-	private Usuario usuario = new Usuario();
 	
 	// Metodos Personalizados
 	/** 
@@ -135,13 +131,6 @@ public class Conta {
 		this.idioma = idioma;
 	}
 
-	public Usuario getUsuario() {
-		return usuario;
-	}
-
-	public void setUsuario(Usuario usuario) {
-		this.usuario = usuario;
-	}
 	
 	
 }

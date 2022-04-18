@@ -3,13 +3,55 @@ package br.com.fiap.tds;
 public class Ingrediente {
 	
 	/**Atributos*/
-	private float peso;
-	private int quantidade;
-	private String nome;
 	
-	/**Método apra visualizar o ingrediente*/
-	public String vizualizar() {
-		return "Ingrediente [peso=" + peso + ", quantidade=" + quantidade + ", nome=" + nome + "]";
+	/**
+	 * Peso do Ingrediente
+	 * */
+	private float peso;
+	/**
+	 * Quantidade de Ingredientes
+	 * */
+	private int quantidade;
+	/**
+	 * Nome do Ingrediente 
+	 * */
+	private String nome;
+	/** 
+     * Método Vizualizar Ingrediente
+     */
+	public void vizualizar() {
+		System.out.print("Ingrediente [peso=" + peso + ", quantidade=" + quantidade + ", nome=" + nome + "]");
+	}
+	
+	/** 
+     * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados) - Criar Ingrediente
+     * @param nome do Ingrediente
+     * @param quantidade de Ingredientes
+     * @param peso do Ingrediente
+     */
+	public void criarIngrediente(String nome, int quantidade, float peso) {
+		this.setNome(nome);
+		this.setQuantidade(quantidade);
+		this.setPeso(peso);
+		System.out.print("Ingrediente " + nome + " criado com sucesso!");
+	}
+	
+	/** 
+     * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados) - Editar Peso do Ingrediente
+     * @param peso do Ingrediente
+     */
+	public void editarPeso(float peso) {
+		this.setPeso(peso);
+		System.out.print("Peso Alterado!");
+	}
+	
+	/** 
+     * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados) - Editar Quantidade do Ingrediente
+     * @param quantidade de Ingredientes
+     */
+	public void editarQuantidade(int quantidade) {
+		this.setQuantidade(quantidade);
+		System.out.print("Quantidade Alterada");
 	}
 	
 	/**Métodos Especiais Getters/Setters*/
