@@ -1,10 +1,20 @@
 package br.com.fiap.tds;
 
+import java.util.ArrayList;
+import java.util.Date;
 
 public class Refeicao {
 	
 	/**Atributos*/
 	
+	/**
+	 * Tipo da Refeição
+	 * */
+	private String tipo;
+	/**
+	 * Data da Refeição
+	 * */
+	private Date data;
 	/**
 	 * Quantidade de Carboidrato da Refeição
 	 * */
@@ -29,6 +39,10 @@ public class Refeicao {
 	 * Nome da Refeição
 	 * */
 	private String nome;
+	/**
+	 * Lista com os Ingredientes da Refeição
+	 * */
+	private ArrayList<Ingrediente> ingredientes = new ArrayList<Ingrediente>();
 	
 
 	/**Método para visualizar a refeição*/
@@ -109,6 +123,19 @@ public class Refeicao {
 	}
 	
 	/**Métodos Especiais Getters/Setters*/
+
+	public String getTipo() {
+		return tipo;
+	}
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+	public Date getData() {
+		return data;
+	}
+	public void setData(Date data) {
+		this.data = data;
+	}
 	public int getCarboidrato() {
 		return carboidrato;
 	}
