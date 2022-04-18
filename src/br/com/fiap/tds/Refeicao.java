@@ -60,14 +60,25 @@ public class Refeicao {
      * @param açucar da Refeição
      * @param carboidrato da Refeição
      */
-	public void criarRefeicao(String nome, float peso, int gordura, int proteina, int acucar, int carboidrato) {
+	public void criarRefeicao(String nome, float peso, int gordura, int proteina, int acucar, int carboidrato, Ingrediente ingrediente) {
 		this.setNome(nome);
 		this.setPeso(peso);
 		this.setGordura(gordura);
 		this.setProteina(proteina);
 		this.setAcucar(acucar);
 		this.setCarboidrato(carboidrato);
+		
 		System.out.print("Refeição " + nome + " criada com sucesso!");
+	}
+	
+	/** 
+     * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados) - Adicionar Ingrediente na Refeição
+     * @param Ingrediente da Refeição
+     * @see Ingrediente
+     */
+	public void adicionarIngrediente(Ingrediente ingrediente) {
+		ingredientes.add(ingrediente);
+		System.out.print("Alimento " + ingrediente.getNome() + " adicionado com sucesso");
 	}
 	
 	/** 
@@ -123,7 +134,9 @@ public class Refeicao {
 	}
 	
 	/**Métodos Especiais Getters/Setters*/
-
+	public ArrayList<Ingrediente> getIngredientes() {
+		return ingredientes;
+	}
 	public String getTipo() {
 		return tipo;
 	}
@@ -172,7 +185,5 @@ public class Refeicao {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	
-
 	
 }
