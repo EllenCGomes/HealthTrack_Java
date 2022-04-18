@@ -6,6 +6,8 @@ public class Exercicio {
 
 	
 	/** Metodo para pesquisar o exercicio */
+	
+
 	public String visualizar() {
 		return "Exercicio [name=" + name + "]";
 	}
