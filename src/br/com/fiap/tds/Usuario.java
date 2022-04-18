@@ -1,5 +1,6 @@
 package br.com.fiap.tds;
 import java.util.Date;
+import java.util.ArrayList;
 
 
 /** 
@@ -27,6 +28,31 @@ public class Usuario {
 	 * Altura do usuario 
 	 */
 	private float altura;
+	/** 
+	 * Referencia classe Conta - Usuario nao pode ser criada antes de cadastrar Conta 
+	 */
+	private Conta conta = new Conta();
+	/** 
+	 * Referencia classe Treinamento 
+	 */
+	private ArrayList<Treinamento> treinamentos = new ArrayList<Treinamento>();
+	/** 
+	 * Referencia classe Refeicao 
+	 */
+	private ArrayList<Refeicao> refeicoes = new ArrayList<Refeicao>();
+	/** 
+	 * Referencia classe Peso
+	 */
+	private ArrayList<Peso> pesos = new ArrayList<Peso>();
+	/** 
+	 * Referencia classe FC
+	 */
+	private ArrayList<FrequenciaCardiaca> frequenciasCardiacas = new ArrayList<FrequenciaCardiaca>();
+	/** 
+	 * Referencia classe PA
+	 */
+	private ArrayList<PressaoArterial> pressoesArteriais = new ArrayList<PressaoArterial>();
+	
 	
 	
 	// Metodos Personalizados
@@ -111,6 +137,48 @@ public class Usuario {
 		this.setAltura(updatedAltura);
 		System.out.print("Nova altura : " + updatedAltura);
 	}
+	/** 
+	 * METODO AINDA NAO IMPLEMENTADO - Listagem Treinamentos 
+	 * @param data Data em que o treinamento foi realizado
+	 * @param horario Horario em que o treinamento foi realizado
+	 * @see Treinamento
+	 */
+	public ArrayList<Treinamento> getTreinamentos(Date data, Date horario) {
+		return treinamentos;
+	}
+	/** 
+	 * METODO AINDA NAO IMPLEMENTADO - Listagem Refeicoes 
+	 * @param data Data em que a refeicao foi feita
+	 * @param horario Horario em que a refeicao foi feita
+	 * @see Refeicao
+	 */
+	public ArrayList<Refeicao> getRefeicoes(Date data, Date horario) {
+		return refeicoes;
+	}
+	/** 
+	 * METODO AINDA NAO IMPLEMENTADO - Listagem Pesos
+	 * @param data Data em que o peso foi medido
+	 * @see Peso 
+	 */
+	public ArrayList<Peso> getPesos(Date data) {
+		return pesos;
+	}
+	/** 
+	 * METODO AINDA NAO IMPLEMENTADO - Listagem FC 
+	 * @param data Data em que o frequencia cardiaca foi medida
+	 * @see FrequenciaCardiaca 
+	 */
+	public ArrayList<FrequenciaCardiaca> getFrequenciasCardiacas(Date data) {
+		return frequenciasCardiacas;
+	}
+	/** 
+	 * METODO AINDA NAO IMPLEMENTADO - Listagem PA 
+	 * @param data Data em que a pressao arterial foi medida
+	 * @see PressaoArterial
+	 */
+	public ArrayList<PressaoArterial> getPressoesArteriais(Date data) {
+		return pressoesArteriais;
+	}
 	
 	// Metodos Especiais - Getters/Setters
 	public String getNome() {
@@ -152,4 +220,42 @@ public class Usuario {
 	public void setAltura(float altura) {
 		this.altura = altura;
 	}
+	public Conta getConta() {
+		return conta;
+	}
+
+	public void setConta(Conta conta) {
+		this.conta = conta;
+	}
+	public ArrayList<Treinamento> getTreinamentos() {
+		return treinamentos;
+	}
+	public void setTreinamentos(ArrayList<Treinamento> treinamentos) {
+		this.treinamentos = treinamentos;
+	}
+	public ArrayList<Refeicao> getRefeicoes() {
+		return refeicoes;
+	}
+	public void setRefeicoes(ArrayList<Refeicao> refeicoes) {
+		this.refeicoes = refeicoes;
+	}
+	public ArrayList<Peso> getPesos() {
+		return pesos;
+	}
+	public void setPesos(ArrayList<Peso> pesos) {
+		this.pesos = pesos;
+	}
+	public ArrayList<FrequenciaCardiaca> getFrequenciasCardiacas() {
+		return frequenciasCardiacas;
+	}
+	public void setFrequenciasCardiacas(ArrayList<FrequenciaCardiaca> frequenciasCardiacas) {
+		this.frequenciasCardiacas = frequenciasCardiacas;
+	}
+	public ArrayList<PressaoArterial> getPressoesArteriais() {
+		return pressoesArteriais;
+	}
+	public void setPressoesArteriais(ArrayList<PressaoArterial> pressoesArteriais) {
+		this.pressoesArteriais = pressoesArteriais;
+	}
+	
 }
