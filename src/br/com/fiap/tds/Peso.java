@@ -2,11 +2,11 @@ package br.com.fiap.tds;
 
 import java.util.Date;
 
+/** 
+ * Historico Peso do Usuario
+ */
 public class Peso {
-	/**
-	 *Atributos
-	 */
-	
+	//Atributos
 	/**
 	 * Data do peso
 	 */
@@ -15,26 +15,29 @@ public class Peso {
 	 * Valor do peso
 	 */
 	private float valor;
+	
+	// Metodos Personalizados
 	/** 
-     * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados) - Adiciona novo peso
+     * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados - CRUD) - Adiciona novo peso
      */
 	public void adicionarPeso(float valor, Date data) {
 		System.out.print("Valor adicionado com sucesso!");
 	}
 	/** 
-     * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados) - Deleta peso
+     * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados - CRUD) - Deleta peso
      */
 	public void deletarPeso() {
 		System.out.print("Valor deletado com sucesso!");
 	}
-	/**
-	 * Método de busca
-	 */
+	/** 
+	* Visualizar usuario pesquisado
+	* @return todos os atributos da classe 
+	*/
 	public String visualizar() {
 		return "Peso [data=" + data + ", valor=" + valor + "]";
 	}
-	/**Métodos Especiais Getters/Setters*/
 	
+	// Metodos Especiais - Getters/Setters
 	public Date getData() {
 		return data;
 	}

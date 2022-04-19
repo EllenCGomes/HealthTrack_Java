@@ -1,10 +1,10 @@
 package br.com.fiap.tds;
 import java.util.Date;
 
-public class TesteConta {
+public class TesteMain {
 	public static void main(String[]args) {
 		/**
-		 * Instancia da classe usuário
+		 * Instancia da classe Usuario
 		 */
 		Usuario user1 = new Usuario();
 		Date nascimento = new Date();
@@ -18,11 +18,11 @@ public class TesteConta {
 		user1.deletarUsuario();
 	
 		/**
-		 * Instancia da classe treinamento
+		 * Instancia da classe Treinamento
 		 */
 		Treinamento treinamento1 = new Treinamento();
 		Date dataExercicio = new Date();
-		treinamento1.criarTreinamento(dataExercicio, "Alta", 5, dataExercicio, dataExercicio);
+		treinamento1.criarTreinamento(dataExercicio, dataExercicio, "Alta", 5, dataExercicio);
 		Exercicio exercicio1 = new Exercicio();
 		exercicio1.name = "Pular corda";
 		treinamento1.adicionarExercicio(exercicio1);

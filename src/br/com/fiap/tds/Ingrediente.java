@@ -1,9 +1,10 @@
 package br.com.fiap.tds;
 
+/** 
+ * Ingredientes da Refeicao
+ */
 public class Ingrediente {
-	
-	/**Atributos*/
-	
+	//Atributos
 	/**
 	 * Peso do Ingrediente
 	 * */
@@ -16,15 +17,18 @@ public class Ingrediente {
 	 * Nome do Ingrediente 
 	 * */
 	private String nome;
-	/** 
-     * Método Vizualizar Ingrediente
-     */
-	public void vizualizar() {
+	
+	// Metodos Personalizados
+		/** 
+		 * Visualizar ingrediente
+		 * @return todos os atributos da classe 
+		 */
+	public void visualizar() {
 		System.out.print("Ingrediente [peso=" + peso + ", quantidade=" + quantidade + ", nome=" + nome + "]");
 	}
 	
 	/** 
-     * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados) - Criar Ingrediente
+     * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados - CRUD) - Criar Ingrediente
      * @param nome do Ingrediente
      * @param quantidade de Ingredientes
      * @param peso do Ingrediente
@@ -37,7 +41,7 @@ public class Ingrediente {
 	}
 	
 	/** 
-     * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados) - Editar Peso do Ingrediente
+     * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados - CRUD) - Editar Peso do Ingrediente
      * @param peso do Ingrediente
      */
 	public void editarPeso(float peso) {
@@ -46,7 +50,7 @@ public class Ingrediente {
 	}
 	
 	/** 
-     * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados) - Editar Quantidade do Ingrediente
+     * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados - CRUD) - Editar Quantidade do Ingrediente
      * @param quantidade de Ingredientes
      */
 	public void editarQuantidade(int quantidade) {
@@ -54,7 +58,7 @@ public class Ingrediente {
 		System.out.print("Quantidade Alterada");
 	}
 	
-	/**Métodos Especiais Getters/Setters*/
+	// Metodos Especiais - Getters/Setters
 	public float getPeso() {
 		return peso;
 	}
