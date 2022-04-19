@@ -28,7 +28,7 @@ public class Conta {
 	 */
 	public String visualizarConta() {
 		return "Conta [email=" + email + ", senha=" + senha + ", username=" + username + ", idioma=" + idioma
-				+ ", usuario=" + usuario + "]";
+				+ ", usuario=" + "]";
 	}
 	
 	/** 
