@@ -2,25 +2,31 @@ package br.com.fiap.tds;
 
 import java.util.Date;
 
+/** 
+ * Pressao Arterial do Usuario
+ */
+
 public class PressaoArterial {
-	/**Atributos*/
+	//Atributos
 	
 	/**
-	 * Data do pressão
+	 * Data da medicao da PA
 	 */
 	Date data;
 	/**
-	 * Pressao sistolica
+	 * Pressao arterial sistolica
 	 */
 	int sistolica;
 	/**
-	 * Pressao distolica
+	 * Pressao arterial distolica
 	 */
 	int distolica;
 	/**
-	 * Se houve pico
+	 * Se houve pico de pressao (hipertensao)
 	 */
 	boolean pico;
+	
+	// Metodos Personalizados
 	/** 
      * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados) - Adiciona nova pressao arterial
      */
@@ -33,20 +39,23 @@ public class PressaoArterial {
 	public void deletarPressaoArterial() {
 		System.out.print("Valor deletado com sucesso!");
 	}
-	/**Metodo de busca*/
+	/** 
+	 * Visualizar pressao arterial 
+	 */
 	public String visualizar() {
 		return "PressaoArterial [data=" + data + ", sistolica=" + sistolica + ", distolica=" + distolica + ", pico="
 				+ pico + "]";
 	}
 	/** 
-     * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados) - Verifica se houve arritmia
+     * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados) - Verifica se houve pico de pressao (hipertensao)
      */
 	public void verificaPico() {
 		if (pico == true ) {
 			System.out.print("Alerta de pico de pressão arterial");
 		}
 	}
-	/**Métodos Especiais Getters/Setters*/
+	
+	// Metodos Especiais - Getters/Setters
 	public Date getData() {
 		return data;
 	}

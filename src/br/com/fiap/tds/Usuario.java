@@ -29,7 +29,7 @@ public class Usuario {
 	 */
 	private float altura;
 	/** 
-	 * Referencia classe Conta - Usuario nao pode ser criada antes de cadastrar Conta 
+	 * Referencia classe Conta - Usuario nao pode ser criado antes de cadastrar Conta 
 	 */
 	private Conta conta = new Conta();
 	/** 
@@ -53,11 +53,10 @@ public class Usuario {
 	 */
 	private ArrayList<PressaoArterial> pressoesArteriais = new ArrayList<PressaoArterial>();
 	
-	
-	
 	// Metodos Personalizados
 	/** 
-	 * Visualizar usuario pesquisado 
+	 * Visualizar usuario pesquisado
+	 * @return todos os atributos da classe 
 	 */
 	public String visualizarUsuario() {
 		return "Usuario [nome=" + nome + ", idade=" + idade + ", genero=" + genero + ", profissao=" + profissao

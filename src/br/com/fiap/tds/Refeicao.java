@@ -3,62 +3,66 @@ package br.com.fiap.tds;
 import java.util.ArrayList;
 import java.util.Date;
 
+/** 
+ * Refeicoes realizadas pelo Usuario
+ */
 public class Refeicao {
-	
-	/**Atributos*/
+	//Atributos
 	
 	/**
-	 * Tipo da Refeição
+	 * Tipo da Refeicao (Cafe da manha, Almoco, Jantar, Snack)
 	 * */
 	private String tipo;
 	/**
-	 * Data da Refeição
+	 * Data da Refeicao
 	 * */
 	private Date data;
 	/**
-	 * Quantidade de Carboidrato da Refeição
+	 * Quantidade de Carboidrato da Refeicao
 	 * */
 	private int carboidrato;
 	/**
-	 * Quantidade de Açucar da Refeição 
+	 * Quantidade de Acucar da Refeicao 
 	 * */
 	private int acucar;
 	/**
-	 * Quantidade de Proteina da Refeição
+	 * Quantidade de Proteina da Refeicao
 	 * */
 	private int proteina;
 	/**
-	 * Quantidade de Gordura da Refeição 
+	 * Quantidade de Gordura da Refeicao 
 	 * */
 	private int gordura;
 	/**
-	 * Peso da Refeição
+	 * Peso da Refeicao
 	 * */
 	private float peso;
 	/**
-	 * Nome da Refeição
+	 * Nome da Refeicao
 	 * */
 	private String nome;
 	/**
-	 * Lista com os Ingredientes da Refeição
+	 * Lista com os Ingredientes da Refeicao
 	 * */
 	private ArrayList<Ingrediente> ingredientes = new ArrayList<Ingrediente>();
 	
-
-	/**Método para visualizar a refeição*/
+	// Metodos Personalizados
+	/**Metodo para visualizar a refeicao
+	 * @return todos os atributos da classe
+	 */
 	public String visualizar() {
 		return "Refeicao [carboidrato=" + carboidrato + ", acucar=" + acucar + ", proteina=" + proteina + ", gordura="
 				+ gordura + ", peso=" + peso + ", nome=" + nome + "]";
 	}
 
 	/** 
-     * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados) - Criar Refeição
-     * @param nome da Refeição
-     * @param peso da Refeição
-     * @param gordura da Refeição
-     * @param proteina da Refeição
-     * @param açucar da Refeição
-     * @param carboidrato da Refeição
+     * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados - CRUD) - Criar Refeicao
+     * @param nome da Refeicao
+     * @param peso da Refeicao
+     * @param gordura da Refeicao
+     * @param proteina da Refeicao
+     * @param acucar da Refeicao
+     * @param carboidrato da Refeicao
      */
 	public void criarRefeicao(String nome, float peso, int gordura, int proteina, int acucar, int carboidrato, Ingrediente ingrediente) {
 		this.setNome(nome);
@@ -67,13 +71,12 @@ public class Refeicao {
 		this.setProteina(proteina);
 		this.setAcucar(acucar);
 		this.setCarboidrato(carboidrato);
-		
 		System.out.print("Refeição " + nome + " criada com sucesso!");
 	}
 	
 	/** 
-     * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados) - Adicionar Ingrediente na Refeição
-     * @param Ingrediente da Refeição
+     * METODO AINDA NAO IMPLEMENTADO - Adicionar Ingrediente na Refeicao
+     * @param Ingrediente da Refeicao
      * @see Ingrediente
      */
 	public void adicionarIngrediente(Ingrediente ingrediente) {
@@ -82,8 +85,8 @@ public class Refeicao {
 	}
 	
 	/** 
-     * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados) - Editar Carboidrato da Refeição
-     * @param carboidrato da Refeição
+     * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados - CRUD) - Editar Carboidrato da Refeicao
+     * @param carboidrato da Refeicao
      */
 	public void editarCarb(int carboidrato) {
 		this.setCarboidrato(carboidrato);
@@ -91,17 +94,17 @@ public class Refeicao {
 	}
 	
 	/** 
-     * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados) - Editar Açucar da Refeição
-     * @param peso do Ingrediente
+     * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados - CRUD) - Editar Acucar da Refeicao
+     * @param acucar da Refeicao
      */
 	public void editarAcucar(int acucar) {
 		this.setAcucar(acucar);
-		System.out.print("Açucar Alterado!");
+		System.out.print("Acucar Alterado!");
 	}
 	
 	/** 
-     * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados) - Editar Proteina da Refeição
-     * @param proteina da Refeição
+     * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados - CRUD) - Editar Proteina da Refeicao
+     * @param proteina da Refeicao
      */
 	public void editarProteina(int proteina) {
 		this.setProteina(proteina);
@@ -109,8 +112,8 @@ public class Refeicao {
 	}
 	
 	/** 
-     * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados) - Editar Gordura da Refeição
-     * @param peso do Ingrediente
+     * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados - CRUD) - Editar Gordura da Refeicao
+     * @param gordura da Refeicao
      */
 	public void editarGordura(int gordura) {
 		this.setGordura(gordura);
@@ -118,8 +121,8 @@ public class Refeicao {
 	}
 	
 	/** 
-     * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados) - Editar Peso da Refeição
-     * @param peso do Refeição
+     * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados - CRUD) - Editar Peso da Refeicao
+     * @param peso do Refeicao
      */
 	public void editarPeso(float peso) {
 		this.setPeso(peso);
@@ -127,13 +130,13 @@ public class Refeicao {
 	}
 	
 	/** 
-     * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados) - Deletar Refeição
+     * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados - CRUD) - Deletar Refeicao
      */
 	public void deletar() {
-		System.out.print("Refeição Deletada!");
+		System.out.print("Refeicao Deletada!");
 	}
 	
-	/**Métodos Especiais Getters/Setters*/
+	// Metodos Especiais - Getters/Setters
 	public ArrayList<Ingrediente> getIngredientes() {
 		return ingredientes;
 	}

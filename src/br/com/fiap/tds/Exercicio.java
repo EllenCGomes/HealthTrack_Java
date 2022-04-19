@@ -1,18 +1,25 @@
 package br.com.fiap.tds;
 
+/** 
+ * Exercicios que o Usuario realiza nos treinos
+ */
 public class Exercicio {
-	/** Atributos */
+	//Atributos
+	/** 
+	 * Nome do exercicio 
+	 */
 	String name;
 
-	
-	/** Metodo para pesquisar o exercicio */
-	
-
+	// Metodos Personalizados
+	/** 
+	* Visualizar exercicio
+	* @return todos os atributos da classe 
+	*/
 	public String visualizar() {
 		return "Exercicio [name=" + name + "]";
 	}
 
-	/** Metodos Getters/Setters */
+	// Metodos Especiais - Getters/Setters
 	public String getName() {
 		return name;
 	}
