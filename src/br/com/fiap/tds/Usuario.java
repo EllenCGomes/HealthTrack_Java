@@ -73,7 +73,7 @@ public class Usuario {
 		this.setNome(novoNome);
 		this.setIdade(novaIdade);
 		this.setAltura(novaAltura);
-		System.out.print("Cadastro realizado com sucesso!");
+		System.out.println("Cadastro realizado com sucesso!");
 	}
 	/** 
 	 * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados - CRUD) - Adiciona um Usuario
@@ -89,13 +89,13 @@ public class Usuario {
 		this.setGenero(novoGenero);
 		this.setProfissao(novaProfissao);
 		this.setAltura(novaAltura);
-		System.out.print("Cadastro realizado com sucesso!");
+		System.out.println("Cadastro realizado com sucesso!");
 	}
 	/** 
 	 * 	METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados - CRUD) - Deleta um Usuario
 	 */
 	public void deletarUsuario() {
-		System.out.print("Usuario removido!");
+		System.out.println("Usuario removido!");
 	}
 	/** 
 	 * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados - CRUD) - Editar nome do Usuario
@@ -103,7 +103,7 @@ public class Usuario {
 	 */
 	public void editarNome(String updatedNome) {
 		this.setNome(updatedNome);
-		System.out.print("Nome alterado para " + updatedNome);
+		System.out.println("Nome alterado para " + updatedNome);
 	}
 	/** 
 	 * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados - CRUD) - Editar idade do Usuario
@@ -111,7 +111,7 @@ public class Usuario {
 	 */
 	public void editarIdade(Date updatedIdade) {
 		this.setIdade(updatedIdade);
-		System.out.print("Nova idade: " + updatedIdade);
+		System.out.println("Nova idade: " + updatedIdade);
 	}
 	/** 
 	 * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados - CRUD) - Editar genero do Usuario
@@ -119,7 +119,7 @@ public class Usuario {
 	 */
 	public void editarGenero(String updatedGenero) {
 		this.setGenero(updatedGenero);
-		System.out.print("Genero alterado para : " + updatedGenero);
+		System.out.println("Genero alterado para : " + updatedGenero);
 	}
 	/** 
 	 * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados - CRUD) - Editar profissao do Usuario
@@ -127,7 +127,7 @@ public class Usuario {
 	 */
 	public void editarProfissao(String updatedProfissao) {
 		this.setProfissao(updatedProfissao);
-		System.out.print("Profissao alterado para : " + updatedProfissao);
+		System.out.println("Profissao alterado para : " + updatedProfissao);
 	}
 	/** 
 	 * METODO AINDA NAO IMPLEMENTADO (integracao com Banco de Dados - CRUD) - Editar altura do Usuario
@@ -135,7 +135,7 @@ public class Usuario {
 	 */
 	public void editarAltura(float updatedAltura) {
 		this.setAltura(updatedAltura);
-		System.out.print("Nova altura : " + updatedAltura);
+		System.out.println("Nova altura : " + updatedAltura);
 	}
 	/** 
 	 * METODO AINDA NAO IMPLEMENTADO - Listagem Treinamentos 
